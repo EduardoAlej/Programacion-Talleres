@@ -3,6 +3,7 @@
 int main() {
     int v = 1;
     int d, n, i, p = 0, c = 0, vv;
+    float cc;
     fflush(stdin);
     printf("Cuantos dias quieres logear\n");
     scanf("%d", &d);
