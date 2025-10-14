@@ -24,11 +24,17 @@ int main(){
             Vc=0;
             do {
                 printf("Inserte la nota del Estudiante %d (del 0 al 10): ", j + 1);
-                scanf("%f", &Nota);
-                if (Nota < 0 || Nota > 10 ) {
+                if (scanf("%f", &Nota) != 1) {
+                    while (getchar() != '\n');
                     printf("Error: Ingrese un numero valido\n");
-                }else{
+                    continue;
+                }
+                while (getchar() != '\n');
+                if (Nota >= 0 && Nota <= 10 ) {
                     Vc=1;
+                  
+                }else{
+                      printf("Error: Ingrese un numero valido\n");
                 }
                 
             } while (!Vc);
