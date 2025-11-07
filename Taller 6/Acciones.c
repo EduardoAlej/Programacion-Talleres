@@ -4,30 +4,43 @@
 #include "Definiciones.h"
 
 void limpiarBuffer() {
-    while (getchar() != '\n');
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
 }
 
 int ingresarP(char nombres[MaxP][MaxN], float precios[MaxP]){
     int cantidadP;
-    printf("Cuantos productos quiere ingresar, son maximo %d: ", MaxP);
+    
+    printf("Cuantos productos quiere ingresar (maximo %d): ", MaxP);
     scanf("%d", &cantidadP);
     limpiarBuffer();
     
     if (cantidadP > MaxP){
-        printf("No puedes pasarte de %d productos\n", MaxP);
+        printf("No puedes pasarte de %d productos. Se limitara a %d.\n", MaxP, MaxP);
         cantidadP = MaxP;
     }
     
+    if (cantidadP < 1){
+        printf("Debes ingresar al menos 1 producto.\n");
+        return 0;
+    }
+    
     for(int i = 0; i < cantidadP; i++){
-        printf("Producto %d:\n", i + 1);
-        printf("  Nombre: ");
+        printf("\n--- Producto %d ---\n", i + 1);
+        
+        printf("Nombre: ");
         fgets(nombres[i], MaxN, stdin);
         nombres[i][strcspn(nombres[i], "\n")] = 0;
         
-        printf("  Precio: $");
-        scanf("%f", &precios[i]);
+        printf("Precio: $");
+        while(scanf("%f", &precios[i]) != 1 || precios[i] < 0){
+            printf("Precio invalido. Ingresa un numero positivo: $");
+            limpiarBuffer();
+        }
         limpiarBuffer();
     }
+    
+    printf("\n%d productos ingresados correctamente!\n", cantidadP);
     return cantidadP;
 }
 

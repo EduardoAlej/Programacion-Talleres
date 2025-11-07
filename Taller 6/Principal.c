@@ -12,7 +12,8 @@ int main(){
     int opcion;
     
     do{
-        printf("Seleccione una opcion:\n1. Agregar Producto\n2. Precio de todo el inventario \n3. Producto Mas Caro y Mas Barato \n4. Precio promedio \n5. Buscar producto \n6. Salir\n");
+        printf("\nSeleccione una opcion:\n1. Agregar Producto\n2. Precio de todo el inventario\n3. Producto Mas Caro y Mas Barato\n4. Precio promedio\n5. Buscar producto\n6. Salir\nOpcion: ");
+        
         scanf("%d", &opcion);
         limpiarBuffer();
         
@@ -59,7 +60,7 @@ int main(){
                 printf("Terminando programa\n");
                 break;
             default:
-                printf("Opcion invalida.\n");
+                printf("Opcion invalida. Ingresa 1-6.\n");
         }
     } while(opcion != 6);
     
