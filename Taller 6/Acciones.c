@@ -4,7 +4,7 @@
 #include "Definiciones.h"
 
 void limpiarBuffer() {
-    while (getchar() != "\n");
+    while (getchar() != '\n');
 }
 int ingresarP(char nombres[MaxP][MaxN], float precios[MaxP]){
     int cantidadP;
@@ -38,16 +38,16 @@ void MAXMIN(char nombres[MaxP][MaxN], float precios[MaxP], int cantidadP, char c
     printf("No hay productos\n");
     return;
  }
- float caro = precios[0];
- float barato =precios[0];
+ float maxp = precios[0];
+ float minp =precios[0];
  strcpy(caro, nombres[0]);
  strcpy(barato, nombres[0]);
  for(int i = 1; i< cantidadP; i++){
-if(precios[i]>caro){
+if(precios[i]>maxp){
     caro=precios[i];
     strcpy(caro,nombres[i]);
 }
-if(precios[i]<barato){
+if(precios[i]<minp){
     barato=precios[i];
     strcpy(barato,nombres[i]);
 }

@@ -16,12 +16,12 @@ printf("Seleccione una opcion:\n1. Agregar Producto\n2. Precio de todo el invent
     limpiarBuffer();
     switch(opcion){
         case 1:
-            ingresarP(nombres, precios, cantidadP);
+           cantidadP= ingresarP(nombres, precios, cantidadP);
             break;
         case 2:
         if(cantidadP > 0){
             float total= calcPT(precios, cantidadP);
-            printf("El precio del inventario es %2.f/n", total);
+            printf("El precio del inventario es %2.f\n", total);
         }else{
             printf("No hay productos insertados/n");
         }
@@ -29,7 +29,7 @@ printf("Seleccione una opcion:\n1. Agregar Producto\n2. Precio de todo el invent
         case 3:
              if(cantidadP > 0){
             MAXMIN( nombres,precios, cantidadP,  caro,barato);
-            printf("El producto mas caro es: %2.f/n", caro);
+            printf("El producto mas caro es: %s/n", caro);
             printf("El producto mas barato es: %2.f/n", barato);
         }else{
             printf("No hay productos insertados/n");
@@ -48,7 +48,7 @@ printf("Seleccione una opcion:\n1. Agregar Producto\n2. Precio de todo el invent
             printf("Que producto queieres buscar" );
             fgets(busqueda, MaxN, stdin);
             busqueda[strcspn(busqueda, "/n")]=0;
-            buscarPro( nombres, cantidadP, busqueda);
+            buscarPro( nombres,precios, cantidadP, busqueda);
         }else{
             printf("No hay productos insertados/n");
         }
