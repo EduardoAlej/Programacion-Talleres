@@ -16,7 +16,7 @@ printf("Seleccione una opcion:\n1. Agregar Producto\n2. Precio de todo el invent
     limpiarBuffer();
     switch(opcion){
         case 1:
-            ingresarP(nombres, precios, &cantidadP);
+            ingresarP(nombres, precios, cantidadP);
             break;
         case 2:
         if(cantidadP > 0){
