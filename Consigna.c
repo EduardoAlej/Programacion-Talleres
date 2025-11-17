@@ -21,6 +21,18 @@ int BP(char nombres[Mproducto][Mlong], int contador, char NB[]){
     return -1;
 }
 
+void eliminarProducto(int indice, int *contador, char nombres[Mproducto][Mlong], 
+                     int cantidad[], float tiempo[], float recursos[]) {
+    int i;
+    for (i = indice; i < (*contador - 1); i++) {
+        strcpy(nombres[i], nombres[i+1]);
+        cantidad[i] = cantidad[i+1];
+        tiempo[i] = tiempo[i+1];
+        recursos[i] = recursos[i+1];
+    }
+    (*contador)--;
+}
+
 int main(){
     char nombres[Mproducto][Mlong];
     int cantidad[Mproducto];
@@ -51,30 +63,31 @@ int main(){
                     break;
                 }
                 printf("Cuantos productos hay que hacer:\n");
-                if (scanf("%d", &cantidad[Cproducto])!=1 || cantidad[Cproducto] <=0){  // Cambiado Mproducto por Cproducto
+                if (scanf("%d", &cantidad[Cproducto])!=1 || cantidad[Cproducto] <=0){
                     printf("Debe de ser un numero positivo\n");
                     limpiarBuffer();
                     break;
                 }
                 printf("Cuanto tiempo se demora (horas):\n");
-                if (scanf("%f", &tiempo[Cproducto])!=1 || tiempo[Cproducto] <=0){  // Cambiado %d por %f
+                if (scanf("%f", &tiempo[Cproducto])!=1 || tiempo[Cproducto] <=0){
                     printf("Debe de ser un numero positivo\n");
                     limpiarBuffer();
                     break;
                 }
                 printf("Cuantos recursos se usan para la produccion (toneladas):\n");
-                if (scanf("%f", &recursos[Cproducto])!=1 || recursos[Cproducto] <=0){  // Cambiado %d por %f
+                if (scanf("%f", &recursos[Cproducto])!=1 || recursos[Cproducto] <=0){
                     printf("Deve de ser un numero positivo\n");
                     limpiarBuffer();
                     break;
                 }
                 limpiarBuffer();
                 Cproducto++;
+                printf("Producto agregado exitosamente!\n");
                 break;
                 
             case 2:
                 if(Cproducto==0){
-                    printf("No hay productos");
+                    printf("No hay productos\n");
                     break;
                 }
                 printf("Productos ingresados:\n");
@@ -82,7 +95,7 @@ int main(){
                     printf("%d. %s\n",i+1, nombres[i]);
                 }
                 char nombreEdi[Mlong];
-                printf("\n Ingrese el nombre del producto que quiere editar:\n");
+                printf("\nIngrese el nombre del producto que quiere editar:\n");
                 fgets(nombreEdi, Mlong, stdin);
                 nombreEdi[strcspn(nombreEdi, "\n")]= '\0';
                 
@@ -90,42 +103,44 @@ int main(){
                     printf("El nombre no puede estar vacio.\n");
                     break;
                 }
-                int BusquedaEdit= BP( nombres, Cproducto, nombreEdi);  // Cambiado contador por Cproducto
+                int BusquedaEdit= BP( nombres, Cproducto, nombreEdi);
                 if(BusquedaEdit==-1){
                     printf("Producto no encontrado.\n");
                     break;
                 }
-                printf("Cual es el nuevo nombre.\n");
+                printf("Editando producto: %s\n", nombres[BusquedaEdit]);
+                printf("Cual es el nuevo nombre: ");
                 fgets(nombres[BusquedaEdit],Mlong, stdin );
                 nombres[BusquedaEdit][strcspn(nombres[BusquedaEdit],"\n")]= '\0';
                 if (nombres[BusquedaEdit][0] == '\0') {
-                    printf(" El nombre no puede estar vacio.\n");
+                    printf("El nombre no puede estar vacio.\n");
                     break;
                 } 
-                printf(" Inserte la nueva cantidad: ");
+                printf("Inserte la nueva cantidad: ");
                 if (scanf("%d", &cantidad[BusquedaEdit]) != 1 || cantidad[BusquedaEdit] <= 0) {
-                    printf(" La cantidad debe ser un numero positivo.\n");
+                    printf("La cantidad debe ser un numero positivo.\n");
                     limpiarBuffer();
                     break;
                 }
-                printf(" Inserte el nuevo tiempo: ");
-                if (scanf("%f", &tiempo[BusquedaEdit]) != 1 || tiempo[BusquedaEdit] <= 0) {  // %d por %f
-                    printf(" El tiempo debe ser un numero positivo.\n");
+                printf("Inserte el nuevo tiempo: ");
+                if (scanf("%f", &tiempo[BusquedaEdit]) != 1 || tiempo[BusquedaEdit] <= 0) {
+                    printf("El tiempo debe ser un numero positivo.\n");
                     limpiarBuffer();
                     break;
                 }
-                printf(" Inserte los nuevos recursos: ");
-                if (scanf("%f", &recursos[BusquedaEdit]) != 1 || recursos[BusquedaEdit] <= 0) {  // %d por %f
-                    printf(" Los recursos deben ser un numero positivo.\n");
+                printf("Inserte los nuevos recursos: ");
+                if (scanf("%f", &recursos[BusquedaEdit]) != 1 || recursos[BusquedaEdit] <= 0) {
+                    printf("Los recursos deben ser un numero positivo.\n");
                     limpiarBuffer();
                     break;
                 }
                 limpiarBuffer();
+                printf("Producto actualizado exitosamente!\n");
                 break;
                 
             case 3:
                 if(Cproducto==0){
-                    printf("No hay productos");
+                    printf("No hay productos\n");
                     break;
                 }
                 printf("Productos ingresados:\n");
@@ -133,30 +148,26 @@ int main(){
                     printf("%d. %s\n",i+1, nombres[i]);
                 }
                 char nombreEli[Mlong];
-                printf("\n Ingrese el nombre del producto que quiere eliminar:\n");
+                printf("\nIngrese el nombre del producto que quiere eliminar:\n");
                 fgets(nombreEli, Mlong, stdin);
                 nombreEli[strcspn(nombreEli, "\n")]= '\0';
                 if (nombreEli[0] == '\0') {
-                    printf(" El nombre no puede estar vacio.\n");
+                    printf("El nombre no puede estar vacio.\n");
                     break;
                 }
-                int BusquedaEli= BP( nombres, Cproducto, nombreEli);  // Cambiado contador por Cproducto
+                int BusquedaEli= BP( nombres, Cproducto, nombreEli);
                 if(BusquedaEli==-1){
                     printf("Producto no encontrado.\n");
                     break;
                 }
-                if(BusquedaEli != Cproducto-1){
-                    strcpy(nombres[BusquedaEli],nombres[Cproducto-1]);
-                    cantidad[BusquedaEli]= cantidad[Cproducto-1];
-                    tiempo[BusquedaEli]=tiempo[Cproducto-1];
-                    recursos[BusquedaEli]=recursos[Cproducto-1];  // Agregado ;
-                }
-                Cproducto--;
+                
+                eliminarProducto(BusquedaEli, &Cproducto, nombres, cantidad, tiempo, recursos);
+                printf("Producto eliminado exitosamente!\n");
                 break;
                 
             case 4:
                 if(Cproducto==0){
-                    printf("No hay productos");
+                    printf("No hay productos\n");
                     break;
                 }
                 float tiempoTotal = 0;
@@ -191,6 +202,12 @@ int main(){
                     printf("La fabrica puede cumplir con la demanda\n");
                 } else {
                     printf("La fabrica no puede cumplir con la demanda\n");
+                    if (tiempoTotal > limiteTiempo) {
+                        printf("- Se excede el tiempo en: %.2f horas\n", tiempoTotal - limiteTiempo);
+                    }
+                    if (recursosTotal > limiteRecursos) {
+                        printf("- Se exceden los recursos en: %.2f toneladas\n", recursosTotal - limiteRecursos);
+                    }
                 }
                 printf("\n");
                 break;
