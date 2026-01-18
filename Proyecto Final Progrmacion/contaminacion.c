@@ -21,111 +21,49 @@ void limpiar_buffer(void) {
 }
 
 int leer_entero(char *mensaje) {
-    char entrada[50];
-    int valor;
+    char entrada[64];
     int intentos = 0;
-    
     while (intentos < 3) {
         printf("%s", mensaje);
-        
-        if (fgets(entrada, sizeof(entrada), stdin) == NULL) {
-            printf("Error en la entrada. Intento %d/3\n", intentos + 1);
-            intentos++;
-            continue;
-        }
-        
-        // Eliminar salto de línea
-        entrada[strcspn(entrada, "\n")] = '\0';
-        
-        // Verificar si la cadena está vacía
-        if (strlen(entrada) == 0) {
-            printf("Entrada vacía. Intento %d/3\n", intentos + 1);
-            intentos++;
-            continue;
-        }
-        
-        // Verificar si es un número válido
-        int valido = 1;
-        for (size_t i = 0; i < strlen(entrada); i++) {
-            if (!isdigit((unsigned char)entrada[i]) && !(i == 0 && entrada[i] == '-')) {
-                valido = 0;
-                break;
-            }
-        }
-        
-        if (valido && sscanf(entrada, "%d", &valor) == 1) {
-            return valor;
-        }
-        
+        fflush(stdout);
+        if (!fgets(entrada, sizeof(entrada), stdin)) return 0;
+        entrada[strcspn(entrada, "\r\n")] = '\0';
+        if (entrada[0] == '\0') { intentos++; continue; }
+        char *endptr = NULL;
+        long val = strtol(entrada, &endptr, 10);
+        if (endptr != entrada && *endptr == '\0') return (int)val;
         printf("'%s' no es un número entero válido. Intento %d/3\n", entrada, intentos + 1);
         intentos++;
     }
-    
-    printf("Demasiados intentos fallidos. Usando valor por defecto: 0\n");
     return 0;
 }
 
 float leer_float(char *mensaje) {
-    char entrada[50];
-    float valor;
+    char entrada[64];
     int intentos = 0;
-    
     while (intentos < 3) {
         printf("%s", mensaje);
-        
-        if (fgets(entrada, sizeof(entrada), stdin) == NULL) {
-            printf("Error en la entrada. Intento %d/3\n", intentos + 1);
-            intentos++;
-            continue;
-        }
-        
-        entrada[strcspn(entrada, "\n")] = '\0';
-        
-        if (strlen(entrada) == 0) {
-            printf("Entrada vacía. Intento %d/3\n", intentos + 1);
-            intentos++;
-            continue;
-        }
-        
-        // Verificar formato de número float
-        int tiene_punto = 0;
-        int valido = 1;
-        
-        for (size_t i = 0; i < strlen(entrada); i++) {
-            if (!isdigit((unsigned char)entrada[i])) {
-                if (entrada[i] == '.' && !tiene_punto) {
-                    tiene_punto = 1;
-                } else if (i == 0 && entrada[i] == '-') {
-                    // Permitir signo negativo al inicio
-                } else {
-                    valido = 0;
-                    break;
-                }
-            }
-        }
-        
-        if (valido && sscanf(entrada, "%f", &valor) == 1) {
-            return valor;
-        }
-        
+        fflush(stdout);
+        if (!fgets(entrada, sizeof(entrada), stdin)) return 0.0f;
+        entrada[strcspn(entrada, "\r\n")] = '\0';
+        if (entrada[0] == '\0') { intentos++; continue; }
+        char *endptr = NULL;
+        float val = strtof(entrada, &endptr);
+        if (endptr != entrada && *endptr == '\0') return val;
         printf("'%s' no es un número decimal válido. Intento %d/3\n", entrada, intentos + 1);
         intentos++;
     }
-    
-    printf("Demasiados intentos fallidos. Usando valor por defecto: 0.0\n");
-    return 0.0;
+    return 0.0f;
 }
 
 void leer_cadena(char *mensaje, char *buffer, int tamanio) {
     printf("%s", mensaje);
-    
-    if (fgets(buffer, tamanio, stdin) == NULL) {
+    fflush(stdout);
+    if (!fgets(buffer, tamanio, stdin)) {
         buffer[0] = '\0';
         return;
     }
-    
-    // Eliminar salto de línea
-    buffer[strcspn(buffer, "\n")] = '\0';
+    buffer[strcspn(buffer, "\r\n")] = '\0';
 }
 
 // ==================== FUNCIONES DE INICIALIZACIÓN ====================

@@ -1,5 +1,11 @@
 #include "archivos.h"
 
+typedef struct {
+    uint32_t magic;    // 'CNTM'
+    uint32_t version;  // 1
+    uint32_t num_zonas;
+} Header;
+
 // ==================== GUARDAR DATOS BINARIOS ====================
 
 void guardar_datos_binario(Zona *zonas, int num_zonas) {
@@ -7,90 +13,109 @@ void guardar_datos_binario(Zona *zonas, int num_zonas) {
         printf("Error: Datos inválidos para guardar.\n");
         return;
     }
-    
+
     FILE *archivo = fopen(ARCHIVO_PRINCIPAL, "wb");
-    
     if (archivo == NULL) {
         printf("Error: No se pudo crear el archivo '%s'.\n", ARCHIVO_PRINCIPAL);
         return;
     }
-    
-    // Guardar cabecera con metadatos
-    time_t ahora = time(NULL);
-    struct tm *tm_info = localtime(&ahora);
-    char fecha_guardado[20];
-    strftime(fecha_guardado, 20, "%Y-%m-%d %H:%M:%S", tm_info);
-    
-    fprintf(archivo, "=== DATOS DE CONTAMINACION ===\n");
-    fprintf(archivo, "Fecha de guardado: %s\n", fecha_guardado);
-    fprintf(archivo, "Número de zonas: %d\n", num_zonas);
-    fprintf(archivo, "Días de simulación: %d\n", DIAS_SIMULACION);
-    fprintf(archivo, "=== DATOS BINARIOS ===\n");
-    
-    // Guardar datos binarios
-    size_t elementos_escritos = fwrite(zonas, sizeof(Zona), num_zonas, archivo);
-    
-    if (elementos_escritos != num_zonas) {
-        printf("Advertencia: No se pudieron escribir todos los datos.\n");
-    }
-    
+
+    Header hdr = { 0x434e544d, 1, (uint32_t)num_zonas };
+    fwrite(&hdr, sizeof(hdr), 1, archivo);
+    fwrite(zonas, sizeof(Zona), (size_t)num_zonas, archivo);
     fclose(archivo);
-    printf("✓ Datos guardados en '%s' (%d zonas, %ld bytes).\n", 
-           ARCHIVO_PRINCIPAL, num_zonas, sizeof(Zona) * num_zonas);
+    printf("✓ Datos guardados en '%s' (%d zonas, %zu bytes).\n",
+           ARCHIVO_PRINCIPAL, num_zonas, sizeof(Zona) * (size_t)num_zonas);
 }
 
 // ==================== CARGAR DATOS BINARIOS ====================
 
+static int registro_valido(const Zona *z) {
+    if (z->id <= 0 || z->poblacion < 0) return 0;
+    if (!isfinite(z->latitud) || z->latitud < -90.0f || z->latitud > 90.0f) return 0;
+    if (!isfinite(z->longitud) || z->longitud < -180.0f || z->longitud > 180.0f) return 0;
+    if (!isfinite(z->factor_contaminacion) || z->factor_contaminacion < 0.1f || z->factor_contaminacion > 10.0f) return 0;
+    for (int d=0; d<DIAS_SIMULACION; d++) {
+        // Fecha ISO: YYYY-MM-DD
+        if (strlen(z->historico[d].fecha) != 10 || z->historico[d].fecha[4] != '-' || z->historico[d].fecha[7] != '-') return 0;
+        for (int c=0; c<NUM_CONTAMINANTES; c++) {
+            if (!isfinite(z->historico[d].valores[c])) return 0;
+            if (z->historico[d].valores[c] < 0.0f || z->historico[d].valores[c] > 5000.0f) return 0;
+            if (z->historico[d].dias_consecutivos[c] < 0 || z->historico[d].dias_consecutivos[c] > 10000) return 0;
+            if (z->historico[d].tendencia[c] < -1 || z->historico[d].tendencia[c] > 1) return 0;
+        }
+    }
+    return 1;
+}
+
+static void regenerar_historico_zona(Zona *z) {
+    // Regenera 30 días coherentes desde hoy hacia atrás usando la misma lógica de simulación
+    // Dia 0: valor base, fecha (hoy - 29)
+    time_t t = time(NULL);
+    struct tm base = *localtime(&t);
+    struct tm inicio = base;
+    inicio.tm_mday -= (DIAS_SIMULACION - 1);
+    mktime(&inicio);
+    for (int c=0; c<NUM_CONTAMINANTES; c++) {
+        z->historico[0].valores[c] = 30.0f + (float)(rand() % 40); // 30..69
+        z->historico[0].tendencia[c] = 0;
+        z->historico[0].dias_consecutivos[c] = 0;
+    }
+    strftime(z->historico[0].fecha, sizeof(z->historico[0].fecha), "%Y-%m-%d", &inicio);
+    // Simula días 1..29 con clima aleatorio
+    for (int d=1; d<DIAS_SIMULACION; d++) {
+        Clima clima = generar_clima_aleatorio();
+        simular_datos(z, d, clima);
+    }
+}
+
 void cargar_datos_binario(Zona **zonas, int *num_zonas) {
     FILE *archivo = fopen(ARCHIVO_PRINCIPAL, "rb");
-    
     if (archivo == NULL) {
         printf("Archivo '%s' no encontrado. Se creará nuevo sistema.\n", ARCHIVO_PRINCIPAL);
         return;
     }
-    
-    // Leer y descartar cabecera de texto
-    char buffer[256];
-    for (int i = 0; i < 6; i++) {
-        if (fgets(buffer, sizeof(buffer), archivo) == NULL) {
-            printf("Error: Formato de archivo inválido.\n");
-            fclose(archivo);
-            return;
-        }
+    Header hdr;
+    if (fread(&hdr, sizeof(hdr), 1, archivo) != 1 || hdr.magic != 0x434e544d) {
+        printf("Error: Cabecera inválida.\n");
+        fclose(archivo);
+        return;
     }
-    
-    // Contar número de zonas (aproximado por tamaño de archivo)
-    fseek(archivo, 0, SEEK_END);
-    long tamaño_archivo = ftell(archivo);
-    fseek(archivo, 6 * 256, SEEK_SET); // Regresar después de la cabecera
-    
-    // Calcular número de zonas
-    *num_zonas = (tamaño_archivo - (6 * 256)) / sizeof(Zona);
-    
+    *num_zonas = (int)hdr.num_zonas;
     if (*num_zonas <= 0 || *num_zonas > 100) {
         printf("Error: Número de zonas inválido en archivo (%d).\n", *num_zonas);
         fclose(archivo);
         return;
     }
-    
-    // Asignar memoria
-    *zonas = (Zona *)malloc(*num_zonas * sizeof(Zona));
-    if (*zonas == NULL) {
-        printf("Error: Memoria insuficiente.\n");
-        fclose(archivo);
-        return;
-    }
-    
-    // Leer datos
-    size_t elementos_leidos = fread(*zonas, sizeof(Zona), *num_zonas, archivo);
-    
-    if (elementos_leidos != *num_zonas) {
-        printf("Advertencia: No se pudieron leer todos los datos.\n");
-        // Ajustar número de zonas leídas
-        *num_zonas = elementos_leidos;
-    }
-    
+    *zonas = (Zona *)calloc((size_t)*num_zonas, sizeof(Zona));
+    if (!*zonas) { printf("Error: Memoria insuficiente.\n"); fclose(archivo); return; }
+
+    size_t leidos = fread(*zonas, sizeof(Zona), (size_t)*num_zonas, archivo);
     fclose(archivo);
+    if (leidos != (size_t)*num_zonas) {
+        printf("Advertencia: No se pudieron leer todos los datos (%zu/%d).\n", leidos, *num_zonas);
+        free(*zonas); *zonas=NULL; *num_zonas=0; return;
+    }
+
+    // Sanitiza campos básicos
+    for (int i = 0; i < *num_zonas; i++) {
+        Zona *z = &(*zonas)[i];
+        z->nombre[sizeof(z->nombre)-1] = '\0';
+        if (!isfinite(z->latitud) || z->latitud < -90.0f || z->latitud > 90.0f) z->latitud = 0.0f;
+        if (!isfinite(z->longitud) || z->longitud < -180.0f || z->longitud > 180.0f) z->longitud = 0.0f;
+        if (!isfinite(z->factor_contaminacion) || z->factor_contaminacion < 0.5f || z->factor_contaminacion > 5.0f) z->factor_contaminacion = 1.0f;
+        if (z->poblacion < 0) z->poblacion = 0;
+    }
+
+    // Valida y regenera históricos inválidos
+    for (int i = 0; i < *num_zonas; i++) {
+        Zona *z = &(*zonas)[i];
+        if (!registro_valido(z)) {
+            printf("⚠️  Zona %d con histórico inválido. Regenerando datos coherentes...\n", i+1);
+            // Mantén metadatos básicos (id, nombre, poblacion, ubicacion, factor)
+            regenerar_historico_zona(z);
+        }
+    }
     printf("✓ Datos cargados desde '%s' (%d zonas).\n", ARCHIVO_PRINCIPAL, *num_zonas);
 }
 
@@ -467,18 +492,12 @@ void leer_archivo_historico(void) {
 
 void limpiar_archivo_historico(void) {
     printf("¿Está seguro de limpiar el archivo histórico? (s/n): ");
-    char respuesta;
-    scanf(" %c", &respuesta);
-    limpiar_buffer();
-    
-    if (respuesta == 's' || respuesta == 'S') {
+    char resp[8];
+    leer_cadena("", resp, sizeof(resp));
+    if (resp[0] == 's' || resp[0] == 'S') {
         FILE *archivo = fopen(ARCHIVO_HISTORICO, "w");
-        if (archivo != NULL) {
-            fclose(archivo);
-            printf("✓ Archivo histórico limpiado correctamente.\n");
-        } else {
-            printf("Error: No se pudo limpiar el archivo histórico.\n");
-        }
+        if (archivo) { fclose(archivo); printf("✓ Archivo histórico limpiado correctamente.\n"); }
+        else { printf("Error: No se pudo limpiar el archivo histórico.\n"); }
     } else {
         printf("Operación cancelada.\n");
     }

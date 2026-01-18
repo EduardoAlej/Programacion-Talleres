@@ -1,7 +1,7 @@
 ===========================================================
            SISTEMA DE ALERTAS DE CONTAMINACIÓN
 ===========================================================
-Fecha de generación: Sun Jan 18 17:43:27 2026
+Fecha de generación: Sun Jan 18 18:06:45 2026
 Zonas monitoreadas: 5
 Límites OMS: CO2=50.00, SO2=20.00, NO2=25.00, PM2.5=15.00
 ===========================================================
@@ -15,16 +15,14 @@ Factor de contaminación: 1.50
 CONTAMINANTES:
 Tipo       Actual     Predic.    Límite    Estado         
 -----------------------------------------------------------
-CO2        80.09      86.77      50.00      ALERTA ALTA/ALERTA ALTA
-SO2        72.61      74.87      20.00      EMERGENCIA/EMERGENCIA
-NO2        105.70     107.09     25.00      EMERGENCIA/EMERGENCIA
-PM2.5      58.98      63.10      15.00      EMERGENCIA/EMERGENCIA
+CO2        65.41      61.66      50.00      ALERTA/ALERTA
+SO2        74.20      69.87      20.00      EMERGENCIA/EMERGENCIA
+NO2        7.80       5.46       25.00      NORMAL/NORMAL
+PM2.5      138.18     132.79     15.00      EMERGENCIA/EMERGENCIA
 
 NIVEL DE ALERTA GLOBAL: 3 - 🚨 EMERGENCIA: Niveles extremadamente peligrosos. Se recomienda evacuación de grupos sensibles y suspensión total de actividades al aire libre. [Zona: Centro Urbano]
 RECOMENDACIONES:
-- Reducir tráfico vehicular en Centro Urbano
 - Limitar operaciones industriales en Centro Urbano
-- Controlar emisiones de vehículos en Centro Urbano
 - Suspender actividades al aire libre en Centro Urbano
 ===========================================================
 
@@ -37,10 +35,10 @@ Factor de contaminación: 2.00
 CONTAMINANTES:
 Tipo       Actual     Predic.    Límite    Estado         
 -----------------------------------------------------------
-CO2        129.90     132.24     50.00      EMERGENCIA/EMERGENCIA
-SO2        91.76      101.72     20.00      EMERGENCIA/EMERGENCIA
-NO2        106.86     112.84     25.00      EMERGENCIA/EMERGENCIA
-PM2.5      97.26      103.36     15.00      EMERGENCIA/EMERGENCIA
+CO2        106.62     101.94     50.00      EMERGENCIA/EMERGENCIA
+SO2        83.36      76.88      20.00      EMERGENCIA/EMERGENCIA
+NO2        38.30      33.89      25.00      ALERTA ALTA/ALERTA
+PM2.5      58.06      61.86      15.00      EMERGENCIA/EMERGENCIA
 
 NIVEL DE ALERTA GLOBAL: 3 - 🚨 EMERGENCIA: Niveles extremadamente peligrosos. Se recomienda evacuación de grupos sensibles y suspensión total de actividades al aire libre. [Zona: Zona Industrial]
 RECOMENDACIONES:
@@ -59,16 +57,14 @@ Factor de contaminación: 1.00
 CONTAMINANTES:
 Tipo       Actual     Predic.    Límite    Estado         
 -----------------------------------------------------------
-CO2        28.13      28.92      50.00      NORMAL/NORMAL
-SO2        45.82      48.81      20.00      EMERGENCIA/EMERGENCIA
-NO2        43.75      46.50      25.00      ALERTA ALTA/ALERTA ALTA
-PM2.5      45.94      50.93      15.00      EMERGENCIA/EMERGENCIA
+CO2        44.80      39.60      50.00      PRECAUCION/NORMAL
+SO2        4.55       3.19       20.00      NORMAL/NORMAL
+NO2        72.42      69.39      25.00      EMERGENCIA/EMERGENCIA
+PM2.5      21.61      21.06      15.00      ALERTA/ALERTA
 
 NIVEL DE ALERTA GLOBAL: 3 - 🚨 EMERGENCIA: Niveles extremadamente peligrosos. Se recomienda evacuación de grupos sensibles y suspensión total de actividades al aire libre. [Zona: Residencial Norte]
 RECOMENDACIONES:
-- Limitar operaciones industriales en Residencial Norte
 - Controlar emisiones de vehículos en Residencial Norte
-- Suspender actividades al aire libre en Residencial Norte
 ===========================================================
 
 ZONA: Residencial Sur (ID: 4)
@@ -80,14 +76,15 @@ Factor de contaminación: 1.20
 CONTAMINANTES:
 Tipo       Actual     Predic.    Límite    Estado         
 -----------------------------------------------------------
-CO2        70.82      73.07      50.00      ALERTA/ALERTA
-SO2        34.61      38.01      20.00      ALERTA ALTA/ALERTA ALTA
-NO2        0.00       0.00       25.00      NORMAL/NORMAL
-PM2.5      67.27      72.42      15.00      EMERGENCIA/EMERGENCIA
+CO2        67.09      62.64      50.00      ALERTA/ALERTA
+SO2        38.11      34.52      20.00      ALERTA ALTA/ALERTA ALTA
+NO2        77.05      72.76      25.00      EMERGENCIA/EMERGENCIA
+PM2.5      29.48      27.87      15.00      ALERTA ALTA/ALERTA ALTA
 
 NIVEL DE ALERTA GLOBAL: 3 - 🚨 EMERGENCIA: Niveles extremadamente peligrosos. Se recomienda evacuación de grupos sensibles y suspensión total de actividades al aire libre. [Zona: Residencial Sur]
 RECOMENDACIONES:
 - Limitar operaciones industriales en Residencial Sur
+- Controlar emisiones de vehículos en Residencial Sur
 - Suspender actividades al aire libre en Residencial Sur
 ===========================================================
 
@@ -100,22 +97,23 @@ Factor de contaminación: 1.80
 CONTAMINANTES:
 Tipo       Actual     Predic.    Límite    Estado         
 -----------------------------------------------------------
-CO2        104.50     107.49     50.00      EMERGENCIA/EMERGENCIA
-SO2        26.15      28.18      20.00      ALERTA/ALERTA
-NO2        85.67      84.66      25.00      EMERGENCIA/EMERGENCIA
-PM2.5      100.56     107.12     15.00      EMERGENCIA/EMERGENCIA
+CO2        98.40      94.22      50.00      ALERTA ALTA/ALERTA ALTA
+SO2        72.04      73.19      20.00      EMERGENCIA/EMERGENCIA
+NO2        45.57      43.10      25.00      ALERTA ALTA/ALERTA ALTA
+PM2.5      35.76      34.72      15.00      EMERGENCIA/EMERGENCIA
 
 NIVEL DE ALERTA GLOBAL: 3 - 🚨 EMERGENCIA: Niveles extremadamente peligrosos. Se recomienda evacuación de grupos sensibles y suspensión total de actividades al aire libre. [Zona: Area Comercial]
 RECOMENDACIONES:
 - Reducir tráfico vehicular en Area Comercial
+- Limitar operaciones industriales en Area Comercial
 - Controlar emisiones de vehículos en Area Comercial
 - Suspender actividades al aire libre en Area Comercial
 ===========================================================
 
 RESUMEN GENERAL:
 Total de zonas: 5
-Alertas activas: 5
-Emergencias activas: 13
+Alertas activas: 8
+Emergencias activas: 9
 Porcentaje de zonas con alertas: 100.0%
 
 ===========================================================

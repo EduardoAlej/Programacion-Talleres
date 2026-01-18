@@ -1,0 +1,125 @@
+===========================================================
+           SISTEMA DE ALERTAS DE CONTAMINACIÓN
+===========================================================
+Fecha de generación: Sun Jan 18 18:25:51 2026
+Zonas monitoreadas: 5
+Límites OMS: CO2=50.00, SO2=20.00, NO2=25.00, PM2.5=15.00
+===========================================================
+
+ZONA: Centro Urbano (ID: 1)
+Ubicación: Lat 10.4910, Lon -66.9020
+Población: 50000 habitantes
+Factor de contaminación: 1.50
+Última medición: 2026-01-18
+-----------------------------------------------------------
+CONTAMINANTES:
+Tipo       Actual     Predic.    Límite    Estado         
+-----------------------------------------------------------
+CO2        86.70      78.89      50.00      ALERTA ALTA/ALERTA ALTA
+SO2        51.45      53.90      20.00      EMERGENCIA/EMERGENCIA
+NO2        76.78      73.93      25.00      EMERGENCIA/EMERGENCIA
+PM2.5      54.27      55.05      15.00      EMERGENCIA/EMERGENCIA
+
+NIVEL DE ALERTA GLOBAL: 3 - 🚨 EMERGENCIA: Niveles extremadamente peligrosos. Se recomienda evacuación de grupos sensibles y suspensión total de actividades al aire libre. [Zona: Centro Urbano]
+RECOMENDACIONES:
+- Reducir tráfico vehicular en Centro Urbano
+- Limitar operaciones industriales en Centro Urbano
+- Controlar emisiones de vehículos en Centro Urbano
+- Suspender actividades al aire libre en Centro Urbano
+===========================================================
+
+ZONA: Zona Industrial (ID: 2)
+Ubicación: Lat 10.5010, Lon -66.9120
+Población: 20000 habitantes
+Factor de contaminación: 2.00
+Última medición: 2026-01-18
+-----------------------------------------------------------
+CONTAMINANTES:
+Tipo       Actual     Predic.    Límite    Estado         
+-----------------------------------------------------------
+CO2        61.00      52.85      50.00      ALERTA/ALERTA
+SO2        87.72      88.03      20.00      EMERGENCIA/EMERGENCIA
+NO2        56.60      56.11      25.00      EMERGENCIA/EMERGENCIA
+PM2.5      73.92      72.28      15.00      EMERGENCIA/EMERGENCIA
+
+NIVEL DE ALERTA GLOBAL: 3 - 🚨 EMERGENCIA: Niveles extremadamente peligrosos. Se recomienda evacuación de grupos sensibles y suspensión total de actividades al aire libre. [Zona: Zona Industrial]
+RECOMENDACIONES:
+- Limitar operaciones industriales en Zona Industrial
+- Controlar emisiones de vehículos en Zona Industrial
+- Suspender actividades al aire libre en Zona Industrial
+===========================================================
+
+ZONA: Residencial Norte (ID: 3)
+Ubicación: Lat 10.5110, Lon -66.9220
+Población: 35000 habitantes
+Factor de contaminación: 1.00
+Última medición: 2026-01-18
+-----------------------------------------------------------
+CONTAMINANTES:
+Tipo       Actual     Predic.    Límite    Estado         
+-----------------------------------------------------------
+CO2        51.00      43.40      50.00      ALERTA/PRECAUCION
+SO2        45.33      41.92      20.00      EMERGENCIA/EMERGENCIA
+NO2        63.40      61.97      25.00      EMERGENCIA/EMERGENCIA
+PM2.5      92.45      87.34      15.00      EMERGENCIA/EMERGENCIA
+
+NIVEL DE ALERTA GLOBAL: 3 - 🚨 EMERGENCIA: Niveles extremadamente peligrosos. Se recomienda evacuación de grupos sensibles y suspensión total de actividades al aire libre. [Zona: Residencial Norte]
+RECOMENDACIONES:
+- Limitar operaciones industriales en Residencial Norte
+- Controlar emisiones de vehículos en Residencial Norte
+- Suspender actividades al aire libre en Residencial Norte
+===========================================================
+
+ZONA: Residencial Sur (ID: 4)
+Ubicación: Lat 10.5210, Lon -66.9320
+Población: 40000 habitantes
+Factor de contaminación: 1.20
+Última medición: 2026-01-18
+-----------------------------------------------------------
+CONTAMINANTES:
+Tipo       Actual     Predic.    Límite    Estado         
+-----------------------------------------------------------
+CO2        68.78      65.85      50.00      ALERTA/ALERTA
+SO2        83.83      82.12      20.00      EMERGENCIA/EMERGENCIA
+NO2        48.45      45.52      25.00      ALERTA ALTA/ALERTA ALTA
+PM2.5      84.96      83.02      15.00      EMERGENCIA/EMERGENCIA
+
+NIVEL DE ALERTA GLOBAL: 3 - 🚨 EMERGENCIA: Niveles extremadamente peligrosos. Se recomienda evacuación de grupos sensibles y suspensión total de actividades al aire libre. [Zona: Residencial Sur]
+RECOMENDACIONES:
+- Limitar operaciones industriales en Residencial Sur
+- Controlar emisiones de vehículos en Residencial Sur
+- Suspender actividades al aire libre en Residencial Sur
+===========================================================
+
+ZONA: Area Comercial (ID: 5)
+Ubicación: Lat 10.5310, Lon -66.9420
+Población: 45000 habitantes
+Factor de contaminación: 1.80
+Última medición: 2026-01-18
+-----------------------------------------------------------
+CONTAMINANTES:
+Tipo       Actual     Predic.    Límite    Estado         
+-----------------------------------------------------------
+CO2        98.03      94.67      50.00      ALERTA ALTA/ALERTA ALTA
+SO2        91.09      91.49      20.00      EMERGENCIA/EMERGENCIA
+NO2        47.83      41.67      25.00      ALERTA ALTA/ALERTA ALTA
+PM2.5      98.80      91.78      15.00      EMERGENCIA/EMERGENCIA
+
+NIVEL DE ALERTA GLOBAL: 3 - 🚨 EMERGENCIA: Niveles extremadamente peligrosos. Se recomienda evacuación de grupos sensibles y suspensión total de actividades al aire libre. [Zona: Area Comercial]
+RECOMENDACIONES:
+- Reducir tráfico vehicular en Area Comercial
+- Limitar operaciones industriales en Area Comercial
+- Controlar emisiones de vehículos en Area Comercial
+- Suspender actividades al aire libre en Area Comercial
+===========================================================
+
+RESUMEN GENERAL:
+Total de zonas: 5
+Alertas activas: 7
+Emergencias activas: 13
+Porcentaje de zonas con alertas: 100.0%
+
+===========================================================
+Sistema Integral de Gestión y Predicción de Contaminación
+Universidad de las Américas - Programación I
+===========================================================

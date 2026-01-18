@@ -389,10 +389,9 @@ void generar_predicciones_24h(Zona *zonas, int num_zonas) {
     
     // Preguntar si desea generar reporte
     printf("\n¿Desea generar un reporte de alertas? (s/n): ");
-    char respuesta;
-    scanf(" %c", &respuesta);
-    limpiar_buffer();
-    
+    char respuesta_buf[8];
+    leer_cadena("", respuesta_buf, sizeof(respuesta_buf));
+    char respuesta = respuesta_buf[0];
     if (respuesta == 's' || respuesta == 'S') {
         generar_reporte_alerta(zonas, num_zonas, predicciones);
         printf("✅ Reporte de alertas generado exitosamente.\n");
@@ -505,11 +504,10 @@ void mostrar_menu_configuracion(Zona *zonas, int num_zonas) {
 
 void mostrar_menu_reportes(Zona *zonas, int num_zonas) {
     int opcion_reporte;
-    
     do {
         printf("\n");
         printf("┌─────────────────────────────────────────────────────────────┐\n");
-    printf("│                    GENERACIÓN DE REPORTES                   │\n");
+        printf("│                    GENERACIÓN DE REPORTES                   │\n");
         printf("├─────────────────────────────────────────────────────────────┤\n");
         printf("│  1. 📄 Generar reporte CSV                                 │\n");
         printf("│  2. ⚠️  Generar reporte de alertas                         │\n");
@@ -518,7 +516,7 @@ void mostrar_menu_reportes(Zona *zonas, int num_zonas) {
         printf("│  5. 💾 Guardar estado actual del sistema                   │\n");
         printf("│  6. ↩️  Volver al menú principal                           │\n");
         printf("└─────────────────────────────────────────────────────────────┘\n");
-        
+        fflush(stdout);
         opcion_reporte = leer_entero("\nSeleccione tipo de reporte: ");
         
         switch (opcion_reporte) {
@@ -604,7 +602,10 @@ void mostrar_creditos(void) {
     printf("│  📅 Versión 3.0 - 202510                                   │\n");
     printf("│                                                            │\n");
     printf("│  👨‍🏫 Profesor: Carlos Andrés Guaita Ayala                 │\n");
-    printf("│  🎓 Estudiante: [Nombre del Estudiante]                    │\n");
+    printf("│  🎓 Estudiantes:                                           │\n");
+    printf("│     • Eduardo Alejandro                                    │\n");
+    printf("│     • Paulo Fuenmayor                                      │\n");
+    printf("│     • Marcelo Basante                                      │\n");
     printf("│                                                            │\n");
     printf("│  📋 DESCRIPCIÓN:                                           │\n");
     printf("│  Sistema Integral de Gestión y Predicción de               │\n");
@@ -626,5 +627,7 @@ void mostrar_creditos(void) {
 
 void pausar_ejecucion(void) {
     printf("\nPresione Enter para continuar...");
-    limpiar_buffer();
+    fflush(stdout);
+    char tmp[4];
+    fgets(tmp, sizeof(tmp), stdin); // consume el Enter
 }

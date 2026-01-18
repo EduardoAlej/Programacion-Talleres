@@ -3,10 +3,10 @@ Zona: Centro Urbano
 Día de simulación: 8
 Fecha correspondiente: 2025-12-27
 Valores de contaminantes:
-  CO2: 80.04 (↑ SUBIENDO, 1 días consecutivos)
-  SO2: 81.64 (↓ BAJANDO, 1 días consecutivos)
-  NO2: 84.60 (↑ SUBIENDO, 2 días consecutivos)
-  PM2.5: 52.47 (↑ SUBIENDO, 1 días consecutivos)
+  CO2: 56.00 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 31.71 (↓ BAJANDO, 4 días consecutivos)
+  NO2: 71.24 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 77.97 (↑ SUBIENDO, 2 días consecutivos)
 Factor de zona: 1.50
 =================================
 
@@ -15,10 +15,10 @@ Zona: Zona Industrial
 Día de simulación: 8
 Fecha correspondiente: 2025-12-27
 Valores de contaminantes:
-  CO2: 92.52 (↑ SUBIENDO, 1 días consecutivos)
-  SO2: 74.68 (↓ BAJANDO, 1 días consecutivos)
-  NO2: 75.64 (↓ BAJANDO, 1 días consecutivos)
-  PM2.5: 82.28 (↑ SUBIENDO, 1 días consecutivos)
+  CO2: 109.66 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 52.56 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 58.28 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 49.82 (↓ BAJANDO, 1 días consecutivos)
 Factor de zona: 2.00
 =================================
 
@@ -27,10 +27,10 @@ Zona: Residencial Norte
 Día de simulación: 8
 Fecha correspondiente: 2025-12-27
 Valores de contaminantes:
-  CO2: 10.64 (↓ BAJANDO, 2 días consecutivos)
-  SO2: 55.70 (↑ SUBIENDO, 3 días consecutivos)
-  NO2: 63.62 (↓ BAJANDO, 5 días consecutivos)
-  PM2.5: 58.26 (↑ SUBIENDO, 1 días consecutivos)
+  CO2: 22.40 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 36.28 (↑ SUBIENDO, 2 días consecutivos)
+  NO2: 22.96 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 65.38 (↑ SUBIENDO, 2 días consecutivos)
 Factor de zona: 1.00
 =================================
 
@@ -39,10 +39,10 @@ Zona: Residencial Sur
 Día de simulación: 8
 Fecha correspondiente: 2025-12-27
 Valores de contaminantes:
-  CO2: 64.76 (↓ BAJANDO, 1 días consecutivos)
-  SO2: 46.79 (↓ BAJANDO, 4 días consecutivos)
-  NO2: 30.29 (↓ BAJANDO, 4 días consecutivos)
-  PM2.5: 70.80 (↓ BAJANDO, 2 días consecutivos)
+  CO2: 51.68 (↑ SUBIENDO, 2 días consecutivos)
+  SO2: 71.69 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 80.03 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 42.75 (↓ BAJANDO, 1 días consecutivos)
 Factor de zona: 1.20
 =================================
 
@@ -51,10 +51,10 @@ Zona: Area Comercial
 Día de simulación: 8
 Fecha correspondiente: 2025-12-27
 Valores de contaminantes:
-  CO2: 60.98 (↓ BAJANDO, 1 días consecutivos)
-  SO2: 38.71 (↑ SUBIENDO, 2 días consecutivos)
-  NO2: 75.72 (↑ SUBIENDO, 2 días consecutivos)
-  PM2.5: 88.57 (↑ SUBIENDO, 4 días consecutivos)
+  CO2: 58.80 (↑ SUBIENDO, 2 días consecutivos)
+  SO2: 85.46 (↑ SUBIENDO, 2 días consecutivos)
+  NO2: 40.93 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 50.89 (↑ SUBIENDO, 2 días consecutivos)
 Factor de zona: 1.80
 =================================
 
@@ -63,10 +63,10 @@ Zona: Centro Urbano
 Día de simulación: 15
 Fecha correspondiente: 2026-01-03
 Valores de contaminantes:
-  CO2: 76.79 (↓ BAJANDO, 2 días consecutivos)
-  SO2: 73.66 (↓ BAJANDO, 3 días consecutivos)
-  NO2: 91.95 (↓ BAJANDO, 1 días consecutivos)
-  PM2.5: 62.97 (↑ SUBIENDO, 1 días consecutivos)
+  CO2: 51.80 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 46.03 (↑ SUBIENDO, 2 días consecutivos)
+  NO2: 74.05 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 75.74 (↑ SUBIENDO, 2 días consecutivos)
 Factor de zona: 1.50
 =================================
 
@@ -75,10 +75,10 @@ Zona: Zona Industrial
 Día de simulación: 15
 Fecha correspondiente: 2026-01-03
 Valores de contaminantes:
-  CO2: 92.10 (↓ BAJANDO, 1 días consecutivos)
-  SO2: 91.20 (↑ SUBIENDO, 3 días consecutivos)
-  NO2: 74.80 (↓ BAJANDO, 1 días consecutivos)
-  PM2.5: 100.34 (↓ BAJANDO, 1 días consecutivos)
+  CO2: 111.06 (↓ BAJANDO, 2 días consecutivos)
+  SO2: 64.32 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 65.56 (↑ SUBIENDO, 2 días consecutivos)
+  PM2.5: 40.58 (↓ BAJANDO, 3 días consecutivos)
 Factor de zona: 2.00
 =================================
 
@@ -87,10 +87,10 @@ Zona: Residencial Norte
 Día de simulación: 15
 Fecha correspondiente: 2026-01-03
 Valores de contaminantes:
-  CO2: 17.66 (↓ BAJANDO, 1 días consecutivos)
-  SO2: 51.78 (↑ SUBIENDO, 1 días consecutivos)
-  NO2: 58.16 (↓ BAJANDO, 2 días consecutivos)
-  PM2.5: 55.46 (↑ SUBIENDO, 1 días consecutivos)
+  CO2: 16.26 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 42.51 (↑ SUBIENDO, 2 días consecutivos)
+  NO2: 32.82 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 56.35 (↑ SUBIENDO, 1 días consecutivos)
 Factor de zona: 1.00
 =================================
 
@@ -99,10 +99,10 @@ Zona: Residencial Sur
 Día de simulación: 15
 Fecha correspondiente: 2026-01-03
 Valores de contaminantes:
-  CO2: 61.55 (↑ SUBIENDO, 1 días consecutivos)
-  SO2: 43.01 (↓ BAJANDO, 2 días consecutivos)
-  NO2: 26.17 (↑ SUBIENDO, 1 días consecutivos)
-  PM2.5: 77.35 (↑ SUBIENDO, 1 días consecutivos)
+  CO2: 62.81 (↓ BAJANDO, 2 días consecutivos)
+  SO2: 61.41 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 85.54 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 43.22 (↑ SUBIENDO, 1 días consecutivos)
 Factor de zona: 1.20
 =================================
 
@@ -111,10 +111,10 @@ Zona: Area Comercial
 Día de simulación: 15
 Fecha correspondiente: 2026-01-03
 Valores de contaminantes:
-  CO2: 94.93 (↑ SUBIENDO, 1 días consecutivos)
-  SO2: 32.53 (↑ SUBIENDO, 1 días consecutivos)
-  NO2: 77.10 (↑ SUBIENDO, 2 días consecutivos)
-  PM2.5: 93.23 (↓ BAJANDO, 3 días consecutivos)
+  CO2: 68.49 (↑ SUBIENDO, 2 días consecutivos)
+  SO2: 62.78 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 54.36 (↑ SUBIENDO, 2 días consecutivos)
+  PM2.5: 55.43 (↑ SUBIENDO, 1 días consecutivos)
 Factor de zona: 1.80
 =================================
 
@@ -123,10 +123,10 @@ Zona: Centro Urbano
 Día de simulación: 22
 Fecha correspondiente: 2026-01-10
 Valores de contaminantes:
-  CO2: 82.19 (↑ SUBIENDO, 2 días consecutivos)
-  SO2: 72.40 (↓ BAJANDO, 1 días consecutivos)
-  NO2: 88.48 (↓ BAJANDO, 1 días consecutivos)
-  PM2.5: 55.20 (↑ SUBIENDO, 1 días consecutivos)
+  CO2: 52.40 (↓ BAJANDO, 2 días consecutivos)
+  SO2: 47.08 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 71.22 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 74.27 (↑ SUBIENDO, 1 días consecutivos)
 Factor de zona: 1.50
 =================================
 
@@ -135,10 +135,10 @@ Zona: Zona Industrial
 Día de simulación: 22
 Fecha correspondiente: 2026-01-10
 Valores de contaminantes:
-  CO2: 114.50 (↑ SUBIENDO, 3 días consecutivos)
-  SO2: 92.32 (↑ SUBIENDO, 1 días consecutivos)
-  NO2: 92.72 (↑ SUBIENDO, 1 días consecutivos)
-  PM2.5: 109.58 (↑ SUBIENDO, 1 días consecutivos)
+  CO2: 123.24 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 77.20 (↑ SUBIENDO, 3 días consecutivos)
+  NO2: 93.98 (↑ SUBIENDO, 4 días consecutivos)
+  PM2.5: 44.92 (↑ SUBIENDO, 3 días consecutivos)
 Factor de zona: 2.00
 =================================
 
@@ -147,10 +147,10 @@ Zona: Residencial Norte
 Día de simulación: 22
 Fecha correspondiente: 2026-01-10
 Valores de contaminantes:
-  CO2: 21.42 (↑ SUBIENDO, 3 días consecutivos)
-  SO2: 45.89 (↑ SUBIENDO, 1 días consecutivos)
-  NO2: 53.90 (↑ SUBIENDO, 1 días consecutivos)
-  PM2.5: 44.47 (↑ SUBIENDO, 1 días consecutivos)
+  CO2: 16.26 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 41.04 (↑ SUBIENDO, 2 días consecutivos)
+  NO2: 37.10 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 56.84 (↑ SUBIENDO, 1 días consecutivos)
 Factor de zona: 1.00
 =================================
 
@@ -159,10 +159,10 @@ Zona: Residencial Sur
 Día de simulación: 22
 Fecha correspondiente: 2026-01-10
 Valores de contaminantes:
-  CO2: 56.71 (↓ BAJANDO, 1 días consecutivos)
-  SO2: 41.50 (↑ SUBIENDO, 1 días consecutivos)
-  NO2: 6.47 (↑ SUBIENDO, 1 días consecutivos)
-  PM2.5: 70.80 (↓ BAJANDO, 2 días consecutivos)
+  CO2: 64.24 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 66.79 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 86.89 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 41.20 (↓ BAJANDO, 2 días consecutivos)
 Factor de zona: 1.20
 =================================
 
@@ -171,10 +171,10 @@ Zona: Area Comercial
 Día de simulación: 22
 Fecha correspondiente: 2026-01-10
 Valores de contaminantes:
-  CO2: 102.49 (↑ SUBIENDO, 1 días consecutivos)
-  SO2: 19.75 (↓ BAJANDO, 3 días consecutivos)
-  NO2: 73.57 (↑ SUBIENDO, 2 días consecutivos)
-  PM2.5: 98.67 (↑ SUBIENDO, 4 días consecutivos)
+  CO2: 57.78 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 66.56 (↑ SUBIENDO, 3 días consecutivos)
+  NO2: 54.36 (↑ SUBIENDO, 3 días consecutivos)
+  PM2.5: 65.51 (↑ SUBIENDO, 1 días consecutivos)
 Factor de zona: 1.80
 =================================
 
@@ -183,10 +183,10 @@ Zona: Centro Urbano
 Día de simulación: 29
 Fecha correspondiente: 2026-01-17
 Valores de contaminantes:
-  CO2: 83.24 (↓ BAJANDO, 2 días consecutivos)
-  SO2: 68.41 (↓ BAJANDO, 1 días consecutivos)
-  NO2: 105.70 (↑ SUBIENDO, 3 días consecutivos)
-  PM2.5: 52.68 (↓ BAJANDO, 2 días consecutivos)
+  CO2: 73.55 (↑ SUBIENDO, 2 días consecutivos)
+  SO2: 42.25 (↑ SUBIENDO, 2 días consecutivos)
+  NO2: 83.19 (↑ SUBIENDO, 4 días consecutivos)
+  PM2.5: 68.39 (↓ BAJANDO, 1 días consecutivos)
 Factor de zona: 1.50
 =================================
 
@@ -195,10 +195,10 @@ Zona: Zona Industrial
 Día de simulación: 29
 Fecha correspondiente: 2026-01-17
 Valores de contaminantes:
-  CO2: 130.18 (↑ SUBIENDO, 2 días consecutivos)
-  SO2: 100.72 (↓ BAJANDO, 1 días consecutivos)
-  NO2: 112.18 (↑ SUBIENDO, 2 días consecutivos)
-  PM2.5: 89.14 (↓ BAJANDO, 2 días consecutivos)
+  CO2: 130.52 (↑ SUBIENDO, 2 días consecutivos)
+  SO2: 69.22 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 88.24 (↓ BAJANDO, 2 días consecutivos)
+  PM2.5: 43.24 (↓ BAJANDO, 1 días consecutivos)
 Factor de zona: 2.00
 =================================
 
@@ -207,10 +207,10 @@ Zona: Residencial Norte
 Día de simulación: 29
 Fecha correspondiente: 2026-01-17
 Valores de contaminantes:
-  CO2: 26.23 (↑ SUBIENDO, 3 días consecutivos)
-  SO2: 47.22 (↓ BAJANDO, 1 días consecutivos)
-  NO2: 46.55 (↑ SUBIENDO, 1 días consecutivos)
-  PM2.5: 44.54 (↑ SUBIENDO, 1 días consecutivos)
+  CO2: 28.09 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 34.60 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 33.44 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 54.18 (↑ SUBIENDO, 1 días consecutivos)
 Factor de zona: 1.00
 =================================
 
@@ -219,10 +219,10 @@ Zona: Residencial Sur
 Día de simulación: 29
 Fecha correspondiente: 2026-01-17
 Valores de contaminantes:
-  CO2: 70.82 (↓ BAJANDO, 1 días consecutivos)
-  SO2: 38.81 (↑ SUBIENDO, 1 días consecutivos)
-  NO2: 4.00 (↑ SUBIENDO, 1 días consecutivos)
-  PM2.5: 71.47 (↑ SUBIENDO, 2 días consecutivos)
+  CO2: 73.63 (↑ SUBIENDO, 3 días consecutivos)
+  SO2: 65.78 (↑ SUBIENDO, 3 días consecutivos)
+  NO2: 86.05 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 30.37 (↑ SUBIENDO, 1 días consecutivos)
 Factor de zona: 1.20
 =================================
 
@@ -231,10 +231,730 @@ Zona: Area Comercial
 Día de simulación: 29
 Fecha correspondiente: 2026-01-17
 Valores de contaminantes:
-  CO2: 103.37 (↑ SUBIENDO, 1 días consecutivos)
-  SO2: 30.95 (↑ SUBIENDO, 2 días consecutivos)
-  NO2: 73.70 (↑ SUBIENDO, 1 días consecutivos)
-  PM2.5: 94.39 (↓ BAJANDO, 2 días consecutivos)
+  CO2: 64.89 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 81.53 (↑ SUBIENDO, 3 días consecutivos)
+  NO2: 56.53 (↑ SUBIENDO, 4 días consecutivos)
+  PM2.5: 73.07 (↓ BAJANDO, 1 días consecutivos)
+Factor de zona: 1.80
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Centro Urbano
+Día de simulación: 8
+Fecha correspondiente: 2025-12-27
+Valores de contaminantes:
+  CO2: 68.86 (↑ SUBIENDO, 2 días consecutivos)
+  SO2: 89.83 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 58.00 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 53.32 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 1.50
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Zona Industrial
+Día de simulación: 8
+Fecha correspondiente: 2025-12-27
+Valores de contaminantes:
+  CO2: 66.10 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 111.38 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 32.70 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 86.62 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 2.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Norte
+Día de simulación: 8
+Fecha correspondiente: 2025-12-27
+Valores de contaminantes:
+  CO2: 13.46 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 71.54 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 40.03 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 80.15 (↑ SUBIENDO, 2 días consecutivos)
+Factor de zona: 1.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Sur
+Día de simulación: 8
+Fecha correspondiente: 2025-12-27
+Valores de contaminantes:
+  CO2: 71.82 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 77.57 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 82.38 (↑ SUBIENDO, 2 días consecutivos)
+  PM2.5: 80.58 (↑ SUBIENDO, 2 días consecutivos)
+Factor de zona: 1.20
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Area Comercial
+Día de simulación: 8
+Fecha correspondiente: 2025-12-27
+Valores de contaminantes:
+  CO2: 96.62 (↑ SUBIENDO, 2 días consecutivos)
+  SO2: 45.44 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 47.28 (↑ SUBIENDO, 2 días consecutivos)
+  PM2.5: 45.47 (↑ SUBIENDO, 3 días consecutivos)
+Factor de zona: 1.80
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Centro Urbano
+Día de simulación: 15
+Fecha correspondiente: 2026-01-03
+Valores de contaminantes:
+  CO2: 74.78 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 102.01 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 71.44 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 37.78 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 1.50
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Zona Industrial
+Día de simulación: 15
+Fecha correspondiente: 2026-01-03
+Valores de contaminantes:
+  CO2: 90.66 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 108.02 (↓ BAJANDO, 3 días consecutivos)
+  NO2: 58.24 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 98.94 (↑ SUBIENDO, 2 días consecutivos)
+Factor de zona: 2.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Norte
+Día de simulación: 15
+Fecha correspondiente: 2026-01-03
+Valores de contaminantes:
+  CO2: 10.86 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 78.68 (↑ SUBIENDO, 3 días consecutivos)
+  NO2: 35.06 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 89.95 (↑ SUBIENDO, 2 días consecutivos)
+Factor de zona: 1.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Sur
+Día de simulación: 15
+Fecha correspondiente: 2026-01-03
+Valores de contaminantes:
+  CO2: 71.24 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 67.08 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 78.44 (↑ SUBIENDO, 2 días consecutivos)
+  PM2.5: 89.76 (↑ SUBIENDO, 3 días consecutivos)
+Factor de zona: 1.20
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Area Comercial
+Día de simulación: 15
+Fecha correspondiente: 2026-01-03
+Valores de contaminantes:
+  CO2: 110.56 (↑ SUBIENDO, 6 días consecutivos)
+  SO2: 43.98 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 53.00 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 49.95 (↑ SUBIENDO, 2 días consecutivos)
+Factor de zona: 1.80
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Centro Urbano
+Día de simulación: 22
+Fecha correspondiente: 2026-01-10
+Valores de contaminantes:
+  CO2: 77.11 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 111.88 (↑ SUBIENDO, 3 días consecutivos)
+  NO2: 74.28 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 40.30 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 1.50
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Zona Industrial
+Día de simulación: 22
+Fecha correspondiente: 2026-01-10
+Valores de contaminantes:
+  CO2: 94.94 (↓ BAJANDO, 2 días consecutivos)
+  SO2: 130.82 (↑ SUBIENDO, 2 días consecutivos)
+  NO2: 78.56 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 106.62 (↓ BAJANDO, 1 días consecutivos)
+Factor de zona: 2.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Norte
+Día de simulación: 22
+Fecha correspondiente: 2026-01-10
+Valores de contaminantes:
+  CO2: 14.76 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 81.20 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 38.47 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 92.33 (↓ BAJANDO, 1 días consecutivos)
+Factor de zona: 1.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Sur
+Día de simulación: 22
+Fecha correspondiente: 2026-01-10
+Valores de contaminantes:
+  CO2: 64.79 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 61.88 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 79.79 (↑ SUBIENDO, 2 días consecutivos)
+  PM2.5: 86.56 (↓ BAJANDO, 1 días consecutivos)
+Factor de zona: 1.20
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Area Comercial
+Día de simulación: 22
+Fecha correspondiente: 2026-01-10
+Valores de contaminantes:
+  CO2: 121.90 (↓ BAJANDO, 2 días consecutivos)
+  SO2: 59.10 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 56.02 (↑ SUBIENDO, 2 días consecutivos)
+  PM2.5: 51.47 (↓ BAJANDO, 1 días consecutivos)
+Factor de zona: 1.80
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Centro Urbano
+Día de simulación: 29
+Fecha correspondiente: 2026-01-17
+Valores de contaminantes:
+  CO2: 66.12 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 115.66 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 82.36 (↑ SUBIENDO, 2 días consecutivos)
+  PM2.5: 46.81 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 1.50
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Zona Industrial
+Día de simulación: 29
+Fecha correspondiente: 2026-01-17
+Valores de contaminantes:
+  CO2: 108.20 (↑ SUBIENDO, 2 días consecutivos)
+  SO2: 134.96 (↓ BAJANDO, 2 días consecutivos)
+  NO2: 102.52 (↑ SUBIENDO, 2 días consecutivos)
+  PM2.5: 86.38 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 2.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Norte
+Día de simulación: 29
+Fecha correspondiente: 2026-01-17
+Valores de contaminantes:
+  CO2: 36.99 (↑ SUBIENDO, 3 días consecutivos)
+  SO2: 84.42 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 36.78 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 84.35 (↓ BAJANDO, 2 días consecutivos)
+Factor de zona: 1.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Sur
+Día de simulación: 29
+Fecha correspondiente: 2026-01-17
+Valores de contaminantes:
+  CO2: 67.85 (↑ SUBIENDO, 2 días consecutivos)
+  SO2: 62.88 (↑ SUBIENDO, 2 días consecutivos)
+  NO2: 81.64 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 80.85 (↓ BAJANDO, 3 días consecutivos)
+Factor de zona: 1.20
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Area Comercial
+Día de simulación: 29
+Fecha correspondiente: 2026-01-17
+Valores de contaminantes:
+  CO2: 120.14 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 70.69 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 47.58 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 56.76 (↓ BAJANDO, 1 días consecutivos)
+Factor de zona: 1.80
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Centro Urbano
+Día de simulación: 8
+Fecha correspondiente: 2025-12-27
+Valores de contaminantes:
+  CO2: 89.51 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 47.56 (↑ SUBIENDO, 5 días consecutivos)
+  NO2: 51.23 (↓ BAJANDO, 3 días consecutivos)
+  PM2.5: 64.78 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 1.50
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Zona Industrial
+Día de simulación: 8
+Fecha correspondiente: 2025-12-27
+Valores de contaminantes:
+  CO2: 79.40 (↓ BAJANDO, 3 días consecutivos)
+  SO2: 64.56 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 56.20 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 76.00 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 2.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Norte
+Día de simulación: 8
+Fecha correspondiente: 2025-12-27
+Valores de contaminantes:
+  CO2: 63.14 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 55.95 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 40.71 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 36.31 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 1.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Sur
+Día de simulación: 8
+Fecha correspondiente: 2025-12-27
+Valores de contaminantes:
+  CO2: 44.57 (↓ BAJANDO, 2 días consecutivos)
+  SO2: 87.60 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 93.78 (↑ SUBIENDO, 2 días consecutivos)
+  PM2.5: 67.16 (↓ BAJANDO, 2 días consecutivos)
+Factor de zona: 1.20
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Area Comercial
+Día de simulación: 8
+Fecha correspondiente: 2025-12-27
+Valores de contaminantes:
+  CO2: 85.56 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 30.54 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 60.96 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 57.37 (↑ SUBIENDO, 3 días consecutivos)
+Factor de zona: 1.80
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Centro Urbano
+Día de simulación: 15
+Fecha correspondiente: 2026-01-03
+Valores de contaminantes:
+  CO2: 79.64 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 58.48 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 50.18 (↓ BAJANDO, 3 días consecutivos)
+  PM2.5: 51.13 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 1.50
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Zona Industrial
+Día de simulación: 15
+Fecha correspondiente: 2026-01-03
+Valores de contaminantes:
+  CO2: 107.60 (↑ SUBIENDO, 2 días consecutivos)
+  SO2: 77.42 (↑ SUBIENDO, 2 días consecutivos)
+  NO2: 54.82 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 85.68 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 2.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Norte
+Día de simulación: 15
+Fecha correspondiente: 2026-01-03
+Valores de contaminantes:
+  CO2: 79.54 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 65.75 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 42.95 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 34.70 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 1.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Sur
+Día de simulación: 15
+Fecha correspondiente: 2026-01-03
+Valores de contaminantes:
+  CO2: 15.19 (↓ BAJANDO, 3 días consecutivos)
+  SO2: 102.12 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 91.48 (↓ BAJANDO, 2 días consecutivos)
+  PM2.5: 70.25 (↓ BAJANDO, 1 días consecutivos)
+Factor de zona: 1.20
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Area Comercial
+Día de simulación: 15
+Fecha correspondiente: 2026-01-03
+Valores de contaminantes:
+  CO2: 81.58 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 47.93 (↑ SUBIENDO, 2 días consecutivos)
+  NO2: 74.52 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 61.61 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 1.80
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Centro Urbano
+Día de simulación: 22
+Fecha correspondiente: 2026-01-10
+Valores de contaminantes:
+  CO2: 89.72 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 62.05 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 60.79 (↑ SUBIENDO, 3 días consecutivos)
+  PM2.5: 59.84 (↓ BAJANDO, 1 días consecutivos)
+Factor de zona: 1.50
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Zona Industrial
+Día de simulación: 22
+Fecha correspondiente: 2026-01-10
+Valores de contaminantes:
+  CO2: 108.72 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 60.62 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 48.66 (↓ BAJANDO, 2 días consecutivos)
+  PM2.5: 108.08 (↑ SUBIENDO, 2 días consecutivos)
+Factor de zona: 2.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Norte
+Día de simulación: 22
+Fecha correspondiente: 2026-01-10
+Valores de contaminantes:
+  CO2: 79.96 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 64.49 (↓ BAJANDO, 2 días consecutivos)
+  NO2: 35.85 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 31.48 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 1.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Sur
+Día de simulación: 22
+Fecha correspondiente: 2026-01-10
+Valores de contaminantes:
+  CO2: 24.62 (↑ SUBIENDO, 2 días consecutivos)
+  SO2: 99.01 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 104.92 (↑ SUBIENDO, 2 días consecutivos)
+  PM2.5: 73.61 (↑ SUBIENDO, 3 días consecutivos)
+Factor de zona: 1.20
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Area Comercial
+Día de simulación: 22
+Fecha correspondiente: 2026-01-10
+Valores de contaminantes:
+  CO2: 97.58 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 53.97 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 81.32 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 76.35 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 1.80
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Centro Urbano
+Día de simulación: 29
+Fecha correspondiente: 2026-01-17
+Valores de contaminantes:
+  CO2: 96.52 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 49.20 (↓ BAJANDO, 2 días consecutivos)
+  NO2: 59.73 (↑ SUBIENDO, 3 días consecutivos)
+  PM2.5: 63.12 (↓ BAJANDO, 1 días consecutivos)
+Factor de zona: 1.50
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Zona Industrial
+Día de simulación: 29
+Fecha correspondiente: 2026-01-17
+Valores de contaminantes:
+  CO2: 98.78 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 48.16 (↓ BAJANDO, 3 días consecutivos)
+  NO2: 61.68 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 88.90 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 2.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Norte
+Día de simulación: 29
+Fecha correspondiente: 2026-01-17
+Valores de contaminantes:
+  CO2: 69.97 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 70.09 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 35.17 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 33.16 (↓ BAJANDO, 1 días consecutivos)
+Factor de zona: 1.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Sur
+Día de simulación: 29
+Fecha correspondiente: 2026-01-17
+Valores de contaminantes:
+  CO2: 34.70 (↓ BAJANDO, 2 días consecutivos)
+  SO2: 89.77 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 108.95 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 73.61 (↑ SUBIENDO, 2 días consecutivos)
+Factor de zona: 1.20
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Area Comercial
+Día de simulación: 29
+Fecha correspondiente: 2026-01-17
+Valores de contaminantes:
+  CO2: 104.68 (↓ BAJANDO, 2 días consecutivos)
+  SO2: 57.85 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 92.71 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 68.34 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 1.80
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Centro Urbano
+Día de simulación: 8
+Fecha correspondiente: 2025-12-27
+Valores de contaminantes:
+  CO2: 80.43 (↓ BAJANDO, 2 días consecutivos)
+  SO2: 56.49 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 88.42 (↓ BAJANDO, 2 días consecutivos)
+  PM2.5: 65.27 (↓ BAJANDO, 3 días consecutivos)
+Factor de zona: 1.50
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Zona Industrial
+Día de simulación: 8
+Fecha correspondiente: 2025-12-27
+Valores de contaminantes:
+  CO2: 51.00 (↓ BAJANDO, 2 días consecutivos)
+  SO2: 70.70 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 24.30 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 50.62 (↓ BAJANDO, 2 días consecutivos)
+Factor de zona: 2.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Norte
+Día de simulación: 8
+Fecha correspondiente: 2025-12-27
+Valores de contaminantes:
+  CO2: 50.60 (↓ BAJANDO, 2 días consecutivos)
+  SO2: 52.61 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 65.64 (↓ BAJANDO, 2 días consecutivos)
+  PM2.5: 92.87 (↑ SUBIENDO, 2 días consecutivos)
+Factor de zona: 1.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Sur
+Día de simulación: 8
+Fecha correspondiente: 2025-12-27
+Valores de contaminantes:
+  CO2: 28.20 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 75.48 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 48.60 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 84.79 (↑ SUBIENDO, 2 días consecutivos)
+Factor de zona: 1.20
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Area Comercial
+Día de simulación: 8
+Fecha correspondiente: 2025-12-27
+Valores de contaminantes:
+  CO2: 80.52 (↓ BAJANDO, 2 días consecutivos)
+  SO2: 97.89 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 19.80 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 68.19 (↓ BAJANDO, 1 días consecutivos)
+Factor de zona: 1.80
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Centro Urbano
+Día de simulación: 15
+Fecha correspondiente: 2026-01-03
+Valores de contaminantes:
+  CO2: 85.34 (↑ SUBIENDO, 2 días consecutivos)
+  SO2: 57.33 (↑ SUBIENDO, 2 días consecutivos)
+  NO2: 86.06 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 68.21 (↑ SUBIENDO, 2 días consecutivos)
+Factor de zona: 1.50
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Zona Industrial
+Día de simulación: 15
+Fecha correspondiente: 2026-01-03
+Valores de contaminantes:
+  CO2: 41.00 (↓ BAJANDO, 2 días consecutivos)
+  SO2: 83.44 (↑ SUBIENDO, 2 días consecutivos)
+  NO2: 26.30 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 62.94 (↓ BAJANDO, 2 días consecutivos)
+Factor de zona: 2.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Norte
+Día de simulación: 15
+Fecha correspondiente: 2026-01-03
+Valores de contaminantes:
+  CO2: 48.60 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 49.60 (↓ BAJANDO, 2 días consecutivos)
+  NO2: 69.84 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 95.67 (↑ SUBIENDO, 2 días consecutivos)
+Factor de zona: 1.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Sur
+Día de simulación: 15
+Fecha correspondiente: 2026-01-03
+Valores de contaminantes:
+  CO2: 49.63 (↑ SUBIENDO, 3 días consecutivos)
+  SO2: 75.93 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 55.07 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 96.45 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 1.20
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Area Comercial
+Día de simulación: 15
+Fecha correspondiente: 2026-01-03
+Valores de contaminantes:
+  CO2: 97.40 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 91.34 (↓ BAJANDO, 4 días consecutivos)
+  NO2: 30.88 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 87.34 (↑ SUBIENDO, 2 días consecutivos)
+Factor de zona: 1.80
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Centro Urbano
+Día de simulación: 22
+Fecha correspondiente: 2026-01-10
+Valores de contaminantes:
+  CO2: 73.10 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 55.76 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 72.20 (↓ BAJANDO, 2 días consecutivos)
+  PM2.5: 59.28 (↓ BAJANDO, 1 días consecutivos)
+Factor de zona: 1.50
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Zona Industrial
+Día de simulación: 22
+Fecha correspondiente: 2026-01-10
+Valores de contaminantes:
+  CO2: 23.00 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 84.12 (↓ BAJANDO, 3 días consecutivos)
+  NO2: 43.28 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 72.44 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 2.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Norte
+Día de simulación: 22
+Fecha correspondiente: 2026-01-10
+Valores de contaminantes:
+  CO2: 43.20 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 49.67 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 65.92 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 92.17 (↓ BAJANDO, 1 días consecutivos)
+Factor de zona: 1.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Sur
+Día de simulación: 22
+Fecha correspondiente: 2026-01-10
+Valores de contaminantes:
+  CO2: 61.09 (↑ SUBIENDO, 2 días consecutivos)
+  SO2: 75.93 (↑ SUBIENDO, 2 días consecutivos)
+  NO2: 45.24 (↓ BAJANDO, 4 días consecutivos)
+  PM2.5: 90.65 (↓ BAJANDO, 1 días consecutivos)
+Factor de zona: 1.20
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Area Comercial
+Día de simulación: 22
+Fecha correspondiente: 2026-01-10
+Valores de contaminantes:
+  CO2: 96.90 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 101.04 (↑ SUBIENDO, 3 días consecutivos)
+  NO2: 37.06 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 91.12 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 1.80
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Centro Urbano
+Día de simulación: 29
+Fecha correspondiente: 2026-01-17
+Valores de contaminantes:
+  CO2: 83.30 (↑ SUBIENDO, 2 días consecutivos)
+  SO2: 58.59 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 78.08 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 64.43 (↑ SUBIENDO, 2 días consecutivos)
+Factor de zona: 1.50
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Zona Industrial
+Día de simulación: 29
+Fecha correspondiente: 2026-01-17
+Valores de contaminantes:
+  CO2: 53.00 (↑ SUBIENDO, 1 días consecutivos)
+  SO2: 91.92 (↑ SUBIENDO, 1 días consecutivos)
+  NO2: 62.20 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 75.32 (↑ SUBIENDO, 1 días consecutivos)
+Factor de zona: 2.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Norte
+Día de simulación: 29
+Fecha correspondiente: 2026-01-17
+Valores de contaminantes:
+  CO2: 46.00 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 47.15 (↓ BAJANDO, 2 días consecutivos)
+  NO2: 64.38 (↓ BAJANDO, 2 días consecutivos)
+  PM2.5: 94.83 (↑ SUBIENDO, 2 días consecutivos)
+Factor de zona: 1.00
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Residencial Sur
+Día de simulación: 29
+Fecha correspondiente: 2026-01-17
+Valores de contaminantes:
+  CO2: 70.21 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 85.17 (↓ BAJANDO, 2 días consecutivos)
+  NO2: 51.47 (↓ BAJANDO, 1 días consecutivos)
+  PM2.5: 91.84 (↑ SUBIENDO, 2 días consecutivos)
+Factor de zona: 1.20
+=================================
+
+=== COPIA HISTORICA SEMANAL ===
+Zona: Area Comercial
+Día de simulación: 29
+Fecha correspondiente: 2026-01-17
+Valores de contaminantes:
+  CO2: 96.77 (↓ BAJANDO, 1 días consecutivos)
+  SO2: 98.65 (↓ BAJANDO, 1 días consecutivos)
+  NO2: 44.05 (↑ SUBIENDO, 1 días consecutivos)
+  PM2.5: 93.76 (↑ SUBIENDO, 1 días consecutivos)
 Factor de zona: 1.80
 =================================
 
