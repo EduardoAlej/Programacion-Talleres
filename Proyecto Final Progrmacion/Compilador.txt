@@ -1,0 +1,6 @@
+Compilador: cd "Remplazar con direccion de carpeta"
+chcp 65001
+$OutputEncoding = [Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
+del ".\datos_contaminacion.dat"
+gcc -std=c11 -O2 -Wall -Wextra -Wpedantic -o ProyectoFinal.exe archivos.c contaminacion.c prediccion.c main.c -lm
+.\ProyectoFinal.exe
