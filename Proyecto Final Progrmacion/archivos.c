@@ -1,3 +1,4 @@
+#include <stdint.h>
 #include "archivos.h"
 
 typedef struct {
